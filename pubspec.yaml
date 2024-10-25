@@ -1,0 +1,5 @@
+name: frs
+environment:
+  sdk: ">=3.5.4 <4.0.0"
+dev_dependencies:
+  melos: ^6.2.0
