@@ -1,0 +1,29 @@
+name: frontend
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  envied: ^0.5.4+1
+  web_socket_client: ^0.1.5
+  flutter_colorpicker: ^1.1.0
+  types:
+    path: ../../packages/types
+
+dependency_overrides:
+  collection: ^1.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  envied_generator: ^0.5.4+1
+  build_runner: ^2.4.13
+
+flutter:
+  uses-material-design: true

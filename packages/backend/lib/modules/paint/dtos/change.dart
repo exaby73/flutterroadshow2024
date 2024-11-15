@@ -37,7 +37,7 @@ enum DataType { all, update }
 class AllResponse with _$AllResponse {
   const factory AllResponse({
     @Default(DataType.all) DataType type,
-    required List<Paint> data,
+    required List<List<Paint?>> data,
   }) = _AllResponse;
 
   factory AllResponse.fromJson(Map<String, dynamic> json) =>

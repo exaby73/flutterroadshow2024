@@ -1,3 +1,25 @@
 name: frs
+sdkPath: .fvm/flutter_sdk
+
 packages:
+  - apps/*
   - packages/*
+
+scripts:
+  backend:gen:
+    exec: fvm dart run build_runner watch --delete-conflicting-outputs
+    packageFilters:
+      scope: backend
+  backend:gen:clean:
+    exec: fvm dart run build_runner clean
+    packageFilters:
+      scope: backend
+  backend:serve:
+    exec: arcade serve
+    packageFilters:
+      scope: backend
+
+  frontend:gen:
+    exec: fvm flutter pub run build_runner watch --delete-conflicting-outputs
+    packageFilters:
+      scope: frontend

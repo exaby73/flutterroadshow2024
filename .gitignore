@@ -1,2 +1,13 @@
-.dart_tool
+.dart_tool/
 .idea
+
+**/.env
+
+**/*.config.dart
+**/*.drift.dart
+**/*.freezed.dart
+**/*.g.dart
+
+.DS_Store
+# FVM Version Cache
+.fvm/
