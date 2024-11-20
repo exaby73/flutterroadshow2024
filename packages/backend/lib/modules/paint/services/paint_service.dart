@@ -15,9 +15,7 @@ final class PaintService {
     return db.paintDao.getAll();
   }
 
-  Future<Paint> createOrUpdate(
-    ChangeRequest data,
-  ) async {
+  Future<Paint> createOrUpdate(ChangeRequest data) async {
     final existingPaint = await db.paintDao.getPaintFromXY(data.x, data.y);
     if (existingPaint == null) {
       return await db.paintDao.insertFromChangeRequest(data);
