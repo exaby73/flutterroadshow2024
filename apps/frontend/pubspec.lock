@@ -71,7 +71,7 @@ packages:
     source: hosted
     version: "2.11.0"
   backend:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       path: "../../packages/backend"
       relative: true

@@ -2,7 +2,7 @@ import 'package:envied/envied.dart';
 
 part 'env.g.dart';
 
-@Envied(useConstantCase: true)
+@Envied(useConstantCase: true, interpolate: true)
 class Env {
   const Env._();
 

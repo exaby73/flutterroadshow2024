@@ -1,4 +1,3 @@
-import 'package:backend/core/database/daos/paint_dao.dart';
 import 'package:backend/core/database/db.dart';
 import 'package:backend/core/database/tables/paints.drift.dart';
 import 'package:backend/modules/paint/dtos/change.dart';

@@ -1,0 +1,7 @@
+# melos_managed_dependency_overrides: backend,types,collection
+dependency_overrides:
+  backend:
+    path: ../../packages/backend
+  types:
+    path: ../../packages/types
+  collection: ^1.19.0

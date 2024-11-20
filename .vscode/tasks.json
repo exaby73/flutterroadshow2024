@@ -1,0 +1,37 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Generation",
+            "dependsOn": [
+                "backend gen",
+                "frontend gen"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "backend gen",
+            "detail": "Generating backend code using build_runner",
+            "type": "shell",
+            "command": "dart run rps backend gen",
+            "problemMatcher": [],
+            "group": "build",
+            "presentation": {
+                "clear": true,
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "frontend gen",
+            "detail": "Generating frontend code using build_runner",
+            "type": "shell",
+            "command": "dart run rps frontend gen",
+            "problemMatcher": [],
+            "group": "build",
+            "presentation": {
+                "clear": true,
+                "panel": "dedicated"
+            }
+        }
+    ]
+}

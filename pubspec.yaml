@@ -1,5 +1,19 @@
 name: frs
+
 environment:
   sdk: ">=3.5.4 <4.0.0"
+
 dev_dependencies:
   melos: ^6.2.0
+  rps: ^0.7.0
+
+scripts:
+  backend:
+    gen: |
+      cd packages/backend
+      dart run build_runner watch --delete-conflicting-outputs
+
+  frontend:
+    gen: |
+      cd apps/frontend
+      fvm dart run build_runner watch --delete-conflicting-outputs
