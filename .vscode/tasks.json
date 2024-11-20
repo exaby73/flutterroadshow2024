@@ -2,10 +2,28 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Start backend",
+            "type": "shell",
+            "command": "dart run rps backend start",
+            "problemMatcher": [],
+            "presentation": {
+                "clear": true,
+                "panel": "dedicated"
+            }
+        },
+        {
             "label": "Start Generation",
             "dependsOn": [
                 "backend gen",
                 "frontend gen"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean Generation",
+            "dependsOn": [
+                "backend gen:clean",
+                "frontend gen:clean"
             ],
             "problemMatcher": []
         },
@@ -22,10 +40,34 @@
             }
         },
         {
+            "label": "backend gen:clean",
+            "detail": "Generating backend code using build_runner with clean",
+            "type": "shell",
+            "command": "dart run rps backend gen:clean",
+            "problemMatcher": [],
+            "group": "build",
+            "presentation": {
+                "clear": true,
+                "panel": "dedicated"
+            }
+        },
+        {
             "label": "frontend gen",
             "detail": "Generating frontend code using build_runner",
             "type": "shell",
             "command": "dart run rps frontend gen",
+            "problemMatcher": [],
+            "group": "build",
+            "presentation": {
+                "clear": true,
+                "panel": "dedicated"
+            }
+        },
+        {
+            "label": "frontend gen:clean",
+            "detail": "Generating frontend code using build_runner with clean",
+            "type": "shell",
+            "command": "dart run rps frontend gen:clean",
             "problemMatcher": [],
             "group": "build",
             "presentation": {
