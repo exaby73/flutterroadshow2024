@@ -9,11 +9,22 @@ dev_dependencies:
 
 scripts:
   backend:
+    start: |
+      cd packages/backend
+      arcade serve
     gen: |
       cd packages/backend
       dart run build_runner watch --delete-conflicting-outputs
+    gen:clean: |
+      (cd packages/backend
+        dart run build_runner clean)
+      dart run rps backend gen
 
   frontend:
     gen: |
       cd apps/frontend
       fvm dart run build_runner watch --delete-conflicting-outputs
+    gen:clean: |
+      (cd apps/frontend
+        fvm dart run build_runner clean)
+      dart run rps frontend gen

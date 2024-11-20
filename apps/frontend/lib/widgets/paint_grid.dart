@@ -41,8 +41,8 @@ class _PlaceScreenState extends State<PlaceScreen> {
         if (event is! String) return;
         final json = jsonDecode(event) as Map<String, dynamic>;
         final typeString = json['type'] as String;
-        final type =
-            types.DataType.values.firstWhere((element) => element.name == typeString);
+        final type = types.DataType.values
+            .firstWhere((element) => element.name == typeString);
 
         switch (type) {
           case types.DataType.all:
@@ -57,7 +57,8 @@ class _PlaceScreenState extends State<PlaceScreen> {
             }
             break;
           case types.DataType.update:
-            final types.UpdateResponse(:data) = types.UpdateResponse.fromJson(json);
+            final types.UpdateResponse(:data) =
+                types.UpdateResponse.fromJson(json);
             final index = data.y * widget.gridSize + data.x;
             updateCell(index, Color.fromARGB(255, data.r, data.g, data.b));
         }
@@ -233,6 +234,30 @@ class GridPainter extends CustomPainter {
 class ColorPickerDialog extends StatelessWidget {
   final Color currentColor;
 
+  static const List<Color> _colors = [
+    Colors.white,
+    Colors.red,
+    Colors.pink,
+    Colors.purple,
+    Colors.deepPurple,
+    Colors.indigo,
+    Colors.blue,
+    Colors.lightBlue,
+    Colors.cyan,
+    Colors.teal,
+    Colors.green,
+    Colors.lightGreen,
+    Colors.lime,
+    Colors.yellow,
+    Colors.amber,
+    Colors.orange,
+    Colors.deepOrange,
+    Colors.brown,
+    Colors.grey,
+    Colors.blueGrey,
+    Colors.black,
+  ];
+
   const ColorPickerDialog({super.key, required this.currentColor});
 
   @override
@@ -243,6 +268,7 @@ class ColorPickerDialog extends StatelessWidget {
       title: const Text('Pick a Color'),
       content: SingleChildScrollView(
         child: BlockPicker(
+          availableColors: _colors,
           pickerColor: currentColor,
           onColorChanged: (color) {
             selectedColor = color;
