@@ -1,6 +1,6 @@
 name: frontend
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -17,6 +17,8 @@ dependencies:
 
 dependency_overrides:
   collection: ^1.19.0
+  meta: ^1.16.0
+  clock: ^1.1.2
 
 dev_dependencies:
   flutter_test:

@@ -34,26 +34,26 @@ packages:
     dependency: transitive
     description:
       name: arcade
-      sha256: f83f06d543d98f4f1e2309c876164199b9fcb3e415b98a7591e40580b464fe09
+      sha256: "37f695bd5d5fce17613be66a4c39c2ad5e16104e79da30e3075969a5b7f01fff"
       url: "https://pub.dev"
     source: hosted
-    version: "0.2.1+1"
+    version: "0.2.2"
   arcade_config:
     dependency: transitive
     description:
       name: arcade_config
-      sha256: "00ffaeaa66449a585a9949abf3ad11946ba5849a370ca3316d016251738d4e01"
+      sha256: "9817a872cf798a5592541df7235fdea40144e2aaff3e39ccd1da0574e4a1ddb3"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.5"
+    version: "0.1.1"
   arcade_logger:
     dependency: transitive
     description:
       name: arcade_logger
-      sha256: fce80925bbdb1fe7f1ad5dd66f199bc01e980f3a7f105300fad955f02577ba25
+      sha256: "89880b1c695e7b634a0d68346d6e3fc46e8a77beb949c89c0c689b1daa37b8a8"
       url: "https://pub.dev"
     source: hosted
-    version: "0.0.5"
+    version: "0.0.5+2"
   args:
     dependency: transitive
     description:
@@ -166,13 +166,13 @@ packages:
     source: hosted
     version: "2.0.3"
   clock:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       name: clock
-      sha256: cb6d7f03e1de671e34607e909a7213e31d7752be4fb66a86d29fe1eb14bfb5cf
+      sha256: fddb70d9b5277016c77a80201021d40a2247104d9f4aa7bab7157b7e3f05b84b
       url: "https://pub.dev"
     source: hosted
-    version: "1.1.1"
+    version: "1.1.2"
   code_builder:
     dependency: transitive
     description:
@@ -225,10 +225,10 @@ packages:
     dependency: transitive
     description:
       name: drift_hrana
-      sha256: dbfaa94582703c22391f784c9c359472a8ae22145c9de5cfaa03d7bc6f1a471a
+      sha256: "2ea1ea39f01f0ccee409c8100eb4074f6358d981107c598118e4c537610cf523"
       url: "https://pub.dev"
     source: hosted
-    version: "1.0.2"
+    version: "1.0.3"
   envied:
     dependency: "direct main"
     description:
@@ -355,10 +355,10 @@ packages:
     dependency: transitive
     description:
       name: hrana
-      sha256: "6057172dacc08ee4b701f5fbfc36306965fe59da9d85a8622a2faad98404c508"
+      sha256: "201f5e56600d5ee81b2770fa34ab6526fe05528fd23610e9e4f22cbdafc29487"
       url: "https://pub.dev"
     source: hosted
-    version: "0.3.0"
+    version: "0.4.0"
   http:
     dependency: transitive
     description:
@@ -488,13 +488,13 @@ packages:
     source: hosted
     version: "0.11.1"
   meta:
-    dependency: transitive
+    dependency: "direct overridden"
     description:
       name: meta
-      sha256: bdb68674043280c3428e9ec998512fb681678676b3c54e773629ffe74419f8c7
+      sha256: e3641ec5d63ebf0d9b41bd43201a66e3fc79a65db5f61fc181f04cd27aab950c
       url: "https://pub.dev"
     source: hosted
-    version: "1.15.0"
+    version: "1.16.0"
   mime:
     dependency: transitive
     description:

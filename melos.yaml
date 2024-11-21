@@ -1,5 +1,5 @@
 name: frs
-# sdkPath: .fvm/flutter_sdk
+sdkPath: .fvm/flutter_sdk
 
 packages:
   - apps/*
