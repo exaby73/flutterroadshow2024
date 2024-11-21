@@ -94,6 +94,7 @@ class _PlaceScreenState extends State<PlaceScreen> {
   }
 
   void onTapCell(int x, int y) {
+    if (!isConnected) return;
     int index = y * widget.gridSize + x;
     updateCell(index, selectedColor, updateSocket: true);
   }
@@ -104,6 +105,10 @@ class _PlaceScreenState extends State<PlaceScreen> {
       appBar: AppBar(
         title: const Text('r/place Demo'),
         actions: [
+          Icon(
+            isConnected ? Icons.cloud_done : Icons.cloud_off,
+            color: isConnected ? Colors.green : Colors.red,
+          ),
           IconButton(
             icon: const Icon(Icons.color_lens),
             onPressed: () async {
