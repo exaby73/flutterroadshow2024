@@ -7,16 +7,16 @@ import 'package:frontend/core/env.dart';
 import 'package:types/types.dart' as types;
 import 'package:web_socket_client/web_socket_client.dart';
 
-class PlaceScreen extends StatefulWidget {
+class PaintScreen extends StatefulWidget {
   final int gridSize;
 
-  const PlaceScreen({super.key, required this.gridSize});
+  const PaintScreen({super.key, required this.gridSize});
 
   @override
-  State<PlaceScreen> createState() => _PlaceScreenState();
+  State<PaintScreen> createState() => _PaintScreenState();
 }
 
-class _PlaceScreenState extends State<PlaceScreen> {
+class _PaintScreenState extends State<PaintScreen> {
   Map<int, Color> gridData = {};
   double scale = 1.0;
   Offset panOffset = Offset.zero;
@@ -103,7 +103,7 @@ class _PlaceScreenState extends State<PlaceScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('r/place Demo'),
+        title: const Text('ex3.dev/demo/frs2024'),
         actions: [
           Icon(
             isConnected ? Icons.cloud_done : Icons.cloud_off,

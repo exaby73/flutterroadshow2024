@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:frontend/widgets/paint_grid.dart';
+import 'package:frontend/pages/paint_screen.dart';
 
 void main() {
   runApp(const MainApp());
@@ -12,7 +12,7 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       home: Scaffold(
-        body: PlaceScreen(gridSize: 100),
+        body: PaintScreen(gridSize: 100),
       ),
     );
   }
